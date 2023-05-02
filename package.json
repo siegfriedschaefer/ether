@@ -1,21 +1,23 @@
 {
-  "name": "arbitrum",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
-  },
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^18.16.3",
-    "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "ethers": "^6.3.0"
+    "name": "evm-tutorials",
+    "version": "1.0.0",
+    "description": "The evm compatible blockchain tutorials monorepo",
+    "author": "SiggiS",
+    "license": "Apache-2.0",
+    "private": "true",
+    "engines": {
+      "node": ">= 8.0.0 < 18.12.1",
+      "npm": "^6.0.0",
+      "yarn": "^1.0.0"
+    },
+    "scripts": {
+      "lint": "eslint .",
+    },
+    "devDependencies": {
+    },
+    "workspaces": {
+      "packages": [
+        "packages/*"
+      ]
+    }
   }
-}
